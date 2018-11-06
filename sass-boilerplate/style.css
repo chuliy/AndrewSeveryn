@@ -1,0 +1,34 @@
+main {
+	background-color: green;
+	height: 600px;
+	width: 100%;
+}
+body {
+
+	margin: 0;
+}
+header {
+	width: 100%;
+	height: 50px;
+	background-color: darkred;
+
+}
+.header-logo {
+	height: 20px;
+	position: relative;
+	width: 100px;
+	background-color: blue;
+	top:15px;
+	left:15px;
+
+}
+ul li {
+	display: inline-block;
+	
+	position: relative;
+	background-color: pink;
+	height: 20px;
+	width: 70px;
+    left: 400px;
+    bottom: 20px;
+}

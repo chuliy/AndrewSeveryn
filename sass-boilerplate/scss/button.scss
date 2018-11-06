@@ -1,0 +1,57 @@
+@import './colors.scss';
+
+$btn-height: 50px;
+
+@keyframes cart-show {
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+
+.sku-btn-default {
+  padding: 0 30px;
+  height: $btn-height;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0 10px;
+  font-size: 18px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.sku-btn-primary {
+  color: #fff;
+  background: $orange-primary;
+}
+
+.sku-btn-circle {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background: $orange-primary;
+  border-radius: $btn-height;
+  width: $btn-height;
+  height: $btn-height;
+  line-height: $btn-height;
+  transition: width 1s cubic-bezier(.62,.1,.5,1);
+  overflow: hidden;
+
+  &:hover {
+    width: 150px;
+    color: #fff;
+    text-decoration: none;
+    span {
+      display: inline;
+    }
+  }
+
+  span {
+    display: none;
+    white-space: nowrap;
+  }
+}
